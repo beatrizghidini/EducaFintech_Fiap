@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaFintech</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-secondary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+          <div class="card-header">
+            <h3 class="text-center">EducaFintech</h3>
+          </div>
+          
+          <div class="card-body">
+            <form>
+              <div class="form-group text-center">  
+                <div class="photo-upload" id="photo-upload">
+                  <input type="file" accept="image/*" onchange="previewPhoto(event)">
+                  <div class="placeholder">
+                    <span>Insira sua foto</span>
+                    <i class="fa fa-camera"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Insira seu nome completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="cpfCnpj">Informe seu CPF/CNPJ:</label>
+                <input type="cpfCnpj" class="form-control" id="cpfCnpj" placeholder="123.456.789-11" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Informe seu e-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="xxxxxx@gmail.com" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Crie sua senha:</label>
+                <input type="password" class="form-control" id="password" placeholder="*********" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Continuar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
